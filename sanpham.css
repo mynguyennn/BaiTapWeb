@@ -1,0 +1,460 @@
+#logo {
+    height: 65px;
+    display: inline;
+}
+#logo img {
+    height: auto;
+    width:100px;
+    padding: 0px;
+}
+
+#img_tab {
+    width: 100px;
+    height: auto;
+}
+#menu_sp{
+   
+    scroll-behavior: smooth;
+}
+.tab{
+    display: flex;
+    justify-content:center;
+    background-color: rgba(0, 0, 0);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+}
+.tab > li > a{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    padding: 20px 60px;
+    text-decoration: none;
+    color: rgb(182, 181, 181);
+    transition: 0.3s;
+}
+.tab > li > a:hover{
+    color: white;
+}
+
+ul.id{ 
+    padding: 0;
+    margin: 0;
+    background-color:black;
+    justify-content: center;
+    list-style-type: none;
+    z-index: 1;
+}
+nav>ul.id{ 
+    display: flex;
+}
+ul.id>li{
+    max-width: 200px;
+    border-right: 1px;
+}
+ul.id>li>a{
+    text-decoration: none;
+    display: block;
+    padding:40px;
+    color:grey;
+}
+ul.id>li>a:hover{
+    color:white;
+    border-radius: 20px;
+}
+.subcontent{
+    display:none;
+}
+.sub:hover .subcontent{
+    display:block;
+    position: absolute;
+}
+
+
+
+.iconmenu {
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.iconmenu li{
+    max-width: 30px;
+}
+.iconmenu li > a{
+    color: white;
+
+}
+.iconmenu li > a > i{
+    width: 100%;
+    padding: 20px;
+    color: rgb(170, 170, 170);
+    transition: 0.3s;
+}
+.iconmenu li > a > i:hover{
+    color: white;
+}
+
+
+body{
+    background-color:white;
+    padding: 0;
+    margin: 0;
+    font-family: 'fontdep';
+}
+@font-face{
+    src: url(font/HelveticaNeue.ttf.otf);
+    font-family: 'fontdep';
+}
+nav.tcc{
+    border-radius: 20px;
+}
+
+
+#go a{
+    background-color: black ;
+    color:white;
+    padding: 20px;
+    width: 100px;
+    display: flexbox;
+    text-decoration: none;
+    border-radius: 10px;
+    justify-content: center;
+    z-index: 1;
+}
+#go{
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+}
+.icon{
+    width: 1320px;
+    padding: 0px 0px;
+    top:0;
+    left: 0;
+    margin: auto;
+}
+.icon img{
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+.name a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+
+
+
+
+
+.tab-content{
+    padding:0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+.tab-content > div > div > h3{
+    text-align: center;
+    color: black;
+    font-size: 75px;
+    color: rgb(27, 27, 27);
+    margin: 40px;
+}
+.tab-content > div > div > h3:hover{
+    text-decoration: underline;
+}
+.tab-content > div > div > p{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(78, 78, 78);
+}
+.text-center{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.sp{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 90px ;
+    text-align: center;
+    justify-content: space-between;
+    bottom: 30px;
+    color:rgb(48,48,48);
+}
+.sp1 {
+    width: 25%;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+}
+.sp1 img{
+    width: 70%;
+    transition:transform 0.7s;
+}
+.sp1:hover{
+    border: 1px solid rgb(82, 82, 82);
+}
+.sp1 a{
+    text-decoration: none;
+    color: rgb(54,54,54);
+}
+.sp1 h3{
+    color: rgb(151,0,0);
+    margin:30px;
+    font-size: 25px;
+}
+.sp1 p{
+    font-size: 17px;
+}
+#tensp {
+    transition: 0.3s;
+}
+#tensp:hover{
+    color: rgb(151, 0, 0);
+}
+div.new{
+    font-size: 17px;
+    position: absolute;
+    color: white;
+    top:0;
+    right: 0;
+    padding: 6px;
+    border-radius: 0px 8px;
+    animation: doimau 0.5s infinite;
+}
+@keyframes doimau {
+    0% {
+        background-color: rgb(15, 15, 15);
+    }
+    25%{
+        background-color: rgb(196, 196, 196);
+    }
+    50%{
+        background-color: rgb(95, 95, 95);
+    }
+    75%{
+        background-color: rgb(39, 39, 39);
+    }
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
+}
+.sp1 :hover{
+    transform: scale(1.1);
+}
+div.sp_hover img:hover{
+    content: url(trangchu/hover1.jpg);
+    transform: scale(1.1);
+}
+.sp1 >div{
+    overflow: hidden;
+}
+div.sp_hover1 img:hover{
+    content: url(sanpham1/hover2.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover2 img:hover{
+    content: url(chitietsp/sp8_4.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover3 img:hover{
+    content: url(sanpham2/hover3.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover4 img:hover{
+    content: url(sanpham2/hover4.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover5 img:hover{
+    content: url(sanpham2/hover5.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover6 img:hover{
+    content: url(sanpham2/hover6.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover7 img:hover{
+    content: url(sanpham2/hover7.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover8 img:hover{
+    content: url(sanpham2/hover8.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover9 img:hover{
+    content: url(sanpham2/hover9.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover10 img:hover{
+    content: url(sanpham2/hover10.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover11 img:hover{
+    content: url(sanpham3/hover1.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover12 img:hover{
+    content: url(sanpham3/hover2.jpg);
+    transform: scale(1.1);
+}
+div.sp_hover13 img:hover{
+    content: url(sanpham3/hover3.jpg);
+    transform: scale(1.1);
+}
+.imac_sp{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.img_imac > img{
+    width: 680px;
+    height: 888px;
+}
+.text_imac{
+    width: 650px;
+    
+}
+.text_imac > p{
+    font-size: 20px;
+    color: rgb(78, 78, 78);
+}
+.text_imac > h3{
+    font-size: 75px;
+    color: rgb(27, 27, 27);
+    margin: 40px 0px
+}
+.text_imac > h3:hover{
+    text-decoration: underline;
+}
+.icon_imac > img{
+    padding-top: 50px;
+    padding-right: 50px;
+    width: 120px;
+    height: 120px;
+}
+ 
+
+
+
+
+
+
+
+div.hinhanh2-1 img{
+    width: 350px;
+    height: 350px;
+
+}
+.hinhanh2{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content:space-evenly;
+
+}
+
+
+.note{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.note1 a{
+    text-decoration: none;
+    color:#5A5A5A;
+}
+.note1> p{
+    color: #970000;
+}
+.note1> a:hover{
+    text-decoration:underline;
+    color: black;
+}
+
+
+.gioithieu{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+.logogt1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.logogt > img{
+    width: 300px;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.textgt >p {
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+}
+
+ul.hotro1{
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content:space-around;
+}
+ul.hotro1 >li{
+    max-width: 500px;
+    color: rgb(155, 155, 155);
+    
+}
+.ul.hotro1 > li > iframe{
+    margin: 0px;
+    padding-top: 50x;
+}
+.hotro1 > li > p > a > i{
+    color: rgb(155, 155, 155);
+}
+.hotro1 > li > p{
+    font-size: 17px;
+}
+.hotro1 > li > h3{
+    font-size: 19px;
+    color: rgb(194, 194, 194);
+}
+.hotro3{
+    padding-bottom: 30px;
+    margin: 0px;
+}
+    
+
+ .icongt{
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+ .icongt > div > img {
+    vertical-align:middle;
+ }
+ .i2 > img{
+    width: 130px;
+    height: 45px;    
+ }
+.last{
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: rgb(138, 138, 138);
+}
+.last > p {
+    font-size: 14px;
+    margin: 0px;
+    padding: 15px;
+}
+
+
+

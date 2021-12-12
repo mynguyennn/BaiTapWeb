@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac Center</title>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <meta name=keyword content="May tinh,laptop, gia re">
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="java/animate.css"/>
+        <script src="java/wow.min.js"></script>
+        <script src="BTL.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+        <script>
+            $(Document).ready(function(){
+                $("#gototop").hide()
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop()>=100){
+                        $("nav").css({
+                            "position":"fixed",
+                            "left":0,
+                            "right":0,
+                            "z-index":1
+                        })
+                    }else{
+                        $("nav").css({
+                            "position":"relative",
+                            "left":0,
+                            "right":0,
+                            "z-index":1
+                        })
+                    }
+                    if ($(this).scrollTop() >= 100)
+                    $("#gototop").show()
+                    else
+                    $("#gototop").hide()
+                })
+
+                $("#gototop").click(function(){
+                    $("html,body").animate({
+                        scrollTop:0
+                    },1000);
+                })
+            })
+        </script>
+
+        
+    </head>
+    <body>
+        <div class="go" >
+            <a id="gototop" href="javascript:;"><i class="fas fa-chevron-up"></i></a>   
+        </div>
+        <nav class="tcc">
+            <ul class="id">
+                <a href="index.html" id="logo" class="animate__animated animate__fadeInLeftBig"><img src="logo/logo.jpg"></a>
+                <li><a href="index.html" class="animate__animated animate__fadeInDown">Trang chủ</a></li>
+                <li class="sub">
+                    <a href="sanpham.html" class="animate__animated animate__fadeInDown">Sản Phẩm</a>
+                    <ul class="id subcontent">
+                        <li><a href="sanpham.html">MACBOOK</a></li>
+                        <li><a href="#">IPHONE</a></li>
+                        <li><a href="#">APPLE WATCH</a></li>
+                        <li><a href="#">AIRPODS</a></li>
+                        <li><a href="#">IMAC</a></li>
+                        <li><a href="#">IPAD</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="lienhe.html" class="animate__animated animate__fadeInDown">Liên Hệ</a>
+                    <ul class="id subcontent">
+                        <li><a href="lienhe.html">Hỗ Trợ </a></li>
+                        <li><a href="thanhtoan.html">Thanh Toán</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="dangnhap.html" class="animate__animated animate__fadeInDown">Đăng Nhập</a></li> 
+                <div class="animate__animated animate__fadeInRightBig">
+                    <div class="iconmenu">
+                        <li><a href="sanpham.html"><i class="fas fa-search"></i></a></li>
+                        <li><a href="dangnhap.html"><i class="fas fa-user"></i></a></li>
+                        <li><a href="thanhtoan.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </div>
+                </div>
+               
+            </ul>
+        </nav>
+
+        
+        <div class="container">
+            <div class="gallery-display-area">
+                <div class="gallery-wrap">
+                    <div class="image">
+                        <img src="trangchu/poster1.jpg">
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster2.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster3.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster1.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster3.jpg" />
+                    </div>             
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <div class="item">
+                <div class="item_main">
+                    <div class="items">
+                        <div>
+                            <a href="sanpham.html"><img src="trangchu/mac.jpg" alt="Macbbok Pro"></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h1>MACBOOK PRO</h1>
+                            <p>Mỏng, nhẹ và hoàn toàn yên tĩnh
+                            với thiết kế "No Fan, No Noise" từ Apple</p>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div>
+                            <a href="sanpham.html"><img src="trangchu/mac1.jpg" alt="Macbbok Pro"></a>
+                        </div>
+
+                        <div  class="wow animate__zoomIn"> 
+                            <h1>MACBOOK AIR</h1>
+                            <p>Mỏng, nhẹ và hoàn toàn yên tĩnh với thiết kế "No Fan, No Noise" từ Apple</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_main">
+                    <div class="items1">
+                        <div>
+                            <a href="sanpham.html"><img src="trangchu/mac mini.jpg" alt="Macbbok Pro"></a>
+                        </div>
+
+                        <div  class="wow animate__zoomIn">
+                            <h1>MAC MINI M1</h1>
+                            <p>Thiết kế nhỏ gọn hoàn toàn mạnh mẽ Tiếp cận Mac OS với chi phí không thế tốt hơn.</p>
+                        </div>
+                    </div>
+
+                    <div class="items1">
+                        <div>
+                            <a href="sanpham.html"><img src="trangchu/imac.jpg" alt="Macbbok Pro"></a>
+                        </div>
+
+                        <div  class="wow animate__zoomIn">
+                            <h1>IMAC</h1>
+                            <p>Đơn giản với thiết kế All-in-One từ Apple 2 lựa chọn với màn hình 4K và 5K tuyệt đẹp.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+         </section>
+
+
+         <section>
+            <div class="item_main2">
+                <div class="items2">
+                    <div>
+                        <a href="sanpham.html"><img src="trangchu/iphone.jpg" alt="Macbbok Pro"></a>
+                    </div>
+
+                    <div  class="wow animate__zoomIn">
+                        <h1>IPHONE</h1>
+                        <p>iPhone 12, iPhone 12 Pro và Pro Max.
+                            Đã sẵn sàng cho bạn trải nghiệm tại Mac Center</p>
+                    </div>
+                </div>
+
+                <div class="items2">
+                    <div>
+                        <a href="sanpham.html"><img src="trangchu/ipad.jpg" alt="Macbbok Pro"></a>
+                    </div>
+
+                    <div  class="wow animate__zoomIn">
+                        <h1>IPAD</h1>
+                        <p>Nhiều phiên bản về kích thước và dung lượng
+                            iPad 10.2", iPad Air 10.9", iPad Pro 11" và iPad Pro 12.9"</p>
+                    </div>
+                </div>
+
+                <div class="items2">
+                    <div>
+                        <a href="sanpham.html"><img src="trangchu/wacth.jpg" alt="Macbbok Pro"></a>
+                    </div>
+
+                    <div  class="wow animate__zoomIn">
+                        <h1>APPLE WATCH</h1>
+                        <p>Series 6, nhanh hơn, mỏng hơn, pin lâu hơn
+                            Chống nước 50m, màn hình cảm ứng OLED mượt mà.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item_main2">
+                <div class="items2">
+                    <div>
+                        <a href="sanpham.html"><img src="trangchu/airpod.jpg" alt="Macbbok Pro"></a>
+                    </div>
+
+                    <div  class="wow animate__zoomIn">
+                        <h1>AIRPODS</h1>
+                        <p>Âm thanh 360 độ, tích hợp 4 Microphones
+                            Tương tác hoàn hảo với Touch Control hay Siri</p>
+                    </div>
+                </div>
+
+                <div class="items2">
+                    <div>
+                        <a href="sanpham.html"><img src="trangchu/airtag.jpg" alt="Macbbok Pro"></a>
+                    </div>
+
+                    <div  class="wow animate__zoomIn">
+                        <h1>AIRTAG</h1>
+                        <p>Chip xử lý Apple H1, kết nối Bluetooth
+                            2 phiên bản sạc có dây và sạc không dây</p>
+                    </div>
+                </div>
+
+                <div class="items2">
+                    <div>
+                        <a href="sanpham.html"><img src="trangchu/home.jpg" alt="Macbbok Pro"></a>
+                    </div>
+
+                    <div  class="wow animate__zoomIn">
+                        <h1>HOMEPOD MINI</h1>
+                        <p>Mỏng, nhẹ và hoàn toàn yên tĩnh
+                        với thiết kế "No Fan, No Noise" từ Apple</p>
+                    </div>
+                </div>
+            </div>
+
+            
+         </section>
+
+         <div class="gif1">
+             <video muted="muted" width="500" loop="true" autoplay="true" src="gif/gif1.mp4"></video>
+         </div>
+           <div ><a href="sanpham.html" class="aftergif"><h1 class= "wow animate__fadeInUp">SwitchEasy Dots Rainbow</h1></a></div> 
+            <div><p class="aftergif1" class= "wow animate__fadeInUp">Một dòng Case chuyên biệt cho MacBook, được thiết kế với họa tiếc chấm bi độc đáo từ SwitchEasy<br>
+
+                Chất liệu Matte giúp hạn chế vân tay, bụi bẩn ... bảo vệ bề mặt và các góc cạnh cho MacBook một cách tuyệt vời!
+                
+                </p>
+            </div>
+
+         <div class="item_main21">
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img class="wow animate__zoomIn" src="trangchu/image8.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn">
+                    <h1>AIRPODSLÓT PHÍM MACBOOK 2020 JCPAL (CLEAR)</h1>
+                    <p>Chất liệu mềm, trong suốt, nhiều Size cho MacBook
+                        Giá: 250.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img  class="wow animate__zoomIn" src="trangchu/image9.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn">
+                    <h1>DÁN MACBOOK JCPAL 5-IN-1 (SPACE GRAY)</h1>
+                    <p>Có nhiều Size cho MacBook 13.3", 15.4", 16"
+                        Giá: 750.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img class="wow animate__zoomIn" src="trangchu/image10.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn">
+                    <h1>STAND JCPAL FOR MAC</h1>
+                    <p>Chân đế MacBook, thiết kế gập gọn Portable
+                        Giá: 720.000 vnđ</p>
+                </div>
+            </div>
+        </div>
+        <div class=boting>
+            <a href="sanpham.html"><h1 class= "wow animate__fadeInUp">Airpods Max</h1></a>
+            <p class= "wow animate__slideInUp"> Giờ đây, bạn hoàn toàn có thể dễ dàng trải nghiệm chất âm thực tế AirPods Max tại Mac Center<br>
+
+                Hiện tại, AirPods Max gồm có 5 màu: Space Gray, Silver, Sky Blue, Pink và Green.</p>
+        </div>
+        <div class="item_main21">
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img class="wow animate__zoomIn" src="trangchu/image11.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn">
+                    <h1>BOSE PORTABLE HOME SPEAKER</h1>
+                    <p>Âm thanh 360 độ với tiếng Bass chắc khỏe từ Bose
+                        Giá: 1.250.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img class="wow animate__zoomIn" src="trangchu/image12.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn">
+                    <h1>AIRPODS MAX (PINK)</h1>
+                    <p>Chip Apple H1, Apple-designed dynamic driver
+                        Giá: 12.500.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img class="wow animate__zoomIn" src="trangchu/image13.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn">
+                    <h1>AIRPODS MAX EAR CUSHIONS</h1>
+                    <p>Color: Black, Silver, Blue, Green, Pink<br>
+                        Giá: 1.950.000 vnđ</p>
+                </div>
+            </div>
+        </div>
+
+       
+            <section class="hinhanh1">
+                <div class="hinhanh">
+                    <div ><img class="wow animate__backInLeft" src="trangchu/image14.jpg"></div>
+                </div>
+                <div class="hinhanh">
+                    <div ><img class="wow animate__backInLeft" src="trangchu/image15.jpg" ></div>
+                </div>
+                <div class="hinhanh">
+                    <div ><img  class="wow animate__backInLeft" src="trangchu/image16.jpg" ></div>
+                </div>
+            </section>
+       
+
+        <div class=boting>
+            <a href="sanpham.html"><h1 class= "wow animate__fadeInUp">Rain Design Series mBar</h1></a>
+            <p class= "wow animate__slideInUp">Không chỉ đơn giản là một chân đế dành cho MacBook thân yêu bên bạn...<br>
+                
+                Rain Design luôn mang đến cho bạn sự sáng tạo và cảm hứng hoàn toàn mới trong công việc</p>
+        </div>
+        <div class="item_main21">
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img  class="wow animate__zoomIn" src="trangchu/anh1.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn" >
+                    <h1>BOSE PORTABLE HOME SPEAKER</h1>
+                    <p>Âm thanh 360 độ với tiếng Bass chắc khỏe từ Bose
+                        Giá: 1.250.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img class="wow animate__zoomIn" src="trangchu/anh2.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn" >
+                    <h1>AIRPODS MAX (PINK)</h1>
+                    <p>Chip Apple H1, Apple-designed dynamic driver
+                        Giá: 12.500.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="items21">
+                <div>
+                    <a href="sanpham.html"><img class="wow animate__zoomIn" src="trangchu/anh3.jpg" alt="Macbbok Pro"></a>
+                </div>
+
+                <div class="wow animate__zoomIn" >
+                    <h1>AIRPODS MAX EAR CUSHIONS</h1>
+                    <p>Color: Black, Silver, Blue, Green, Pink<br>
+                        Giá: 1.950.000 vnđ</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <iframe class="wow animate__fadeInUp" class="vid" width="1200" height="676" src="https://www.youtube.com/embed/sAp83zBKlJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+            <div class="hinhanh2">
+                <div class="hinhanh2-1">
+                    <div ><img class="wow animate__fadeInUp" src="trangchu/anh4.jpg"></div>
+                </div>
+                <div class="hinhanh2-1">
+                    <div ><img class="wow animate__fadeInUp" src="trangchu/anh5.jpg" ></div>
+                </div>
+                <div class="hinhanh2-1">
+                    <div ><img class="wow animate__fadeInUp" src="trangchu/anh6.jpg" ></div>
+                </div>
+                <div class="hinhanh2-1">
+                    <div ><img class="wow animate__fadeInUp" src="trangchu/anh7.jpg" ></div>
+                </div>
+            </div>
+
+            <hr id="gachchan">
+            <div class="note" >
+                <div class="note1" >
+                    <p><b>APPLE STORE</b></p>
+                    <a href="sanpham.html"><p>MacBook Pro</p></a>
+                    <a href="sanpham.html"><p>iMac</p></a>
+                    <a href="sanpham.html"><p>iPhone</p></a>
+                    <a href="sanpham.html"><p>iPad, iPad Pro</p></a>
+                    <a href="sanpham.html"><p>Apple Watch</p></a>
+                    <a href="sanpham.html"><p>AirPods</p></a>
+                </div>
+    
+                <div class="note1">
+                    <p><b>ACCESSORIES</b></p>
+                    <a href="sanpham.html"><p>Mac Accessories</p></a>
+                    <a href="sanpham.html"><p>Mice & Keyboards</p></a>
+                    <a href="sanpham.html"><p>Mousepads</p></a>
+                    <a href="sanpham.html"><p>Health & Home Devices</p></a>
+                    <a href="sanpham.html"><p>Webcam & Headset</p></a>
+                    <a href="sanpham.html"><p>Stand for MacBook</p></a>
+                </div>
+    
+                <div class="note1">
+                    <p><b>AUDIO SYSTEM</b></p>
+                    <a href="sanpham.html"><p>JBL</p></a>
+                    <a href="sanpham.html"><p>Bose</p></a>
+                    <a href="sanpham.html"><p>Sony</p></a>
+                    <a href="sanpham.html"><p>Ultimate Ears</p></a>
+                    <a href="sanpham.html" ><p>Harman Kardon</p></a>
+                    <a href="sanpham.html"><p>Marshall</p></a>
+                </div>
+    
+                
+                <div class="note1">
+                    <p><b>HEADPHONE</b></p>
+                    <a href="sanpham.html"><p>Tai nghe JBL</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Bose</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Skull Candy</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Audio Technica</p></a>
+                    <a href="sanpham.html" ><p>Tai nghe Sudio</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Jabra</p></a>
+                </div>
+    
+    
+                <div class="note1">
+                    <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                    <a href="lienhe.html"><p>Chính sách bảo hành</p></a>
+                    <a href="lienhe.html"><p>Chính sách đổi trả</p></a>
+                    <a href="lienhe.html"><p>Chính sách bảo mật thông tin</p></a>
+                    <a href="lienhe.html"><p>Dịch vụ sửa chữa</p></a>
+                    <a href="lienhe.html"><p>Vận chuyển - Thanh toán</p></a>
+                    <a href="lienhe.html"><p>Liên hệ</p></a>
+                </div>
+            </div>
+            
+
+
+        
+            <div class="gioithieu">
+                <div class=logogt1>
+                    <div class="logogt">
+                        <img src="logo/logo_gioithieu.png" />
+                    </div>
+                    <div class="textgt">
+                        <p >Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                        <p >Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="hotro" >
+                    <ul class="hotro1">
+                        <li >
+                            <h3 class="fas fa-map-marker-alt"><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                            <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                            <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                            <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                        </li>
+                        
+                        <li >
+                            <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                            <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                            <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                        </li>
+                        <li >
+                            <h3> Mạng xã hội</h3>
+                            <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                            <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                            <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                        </li>
+                        <li >
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </li>
+                    </ul>
+    
+                    <div class="icongt">
+                        <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                        <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                        <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="last">
+                <p>2008 © MACCENTER VIETNAM. ALL RIGHTS RESERVED.</p>
+            </div>
+    </body>
+</html>

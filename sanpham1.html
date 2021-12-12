@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac Center</title>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <meta name=keyword content="May tinh,laptop, gia re">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="sanpham1.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="java/animate.css"/>
+        <script src="java/wow.min.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+        <script src="BTL.js"></script>
+        <script>
+            $(Document).ready(function(){
+                $("#gototop").hide()
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop()>=100){
+                        $("nav").css({
+                            "position":"fixed",
+                            "left":0,
+                            "right":0,
+                            "z-index":1
+                        })
+                    }else{
+                        $("nav").css({
+                            "position":"relative",
+                            "left":0,
+                            "right":0,
+                            "z-index":1
+                        })
+                    }
+                    if ($(this).scrollTop() >= 100)
+                    $("#gototop").show()
+                    else
+                    $("#gototop").hide()
+                })
+
+                $("#gototop").click(function(){
+                    $("html,body").animate({
+                        scrollTop:0
+                    },1000);
+                })
+            })
+        </script>
+    </head>
+    <body ><!--onload="init()"-->
+        <div id="go">
+            <a id="gototop" href="javascript:;"><i class="fas fa-chevron-up"></i></a>   
+        </div>
+        <nav class="tcc">
+            <ul class="id">
+                <a href="index.html" id="logo" class="animate__animated animate__fadeInLeftBig"><img src="logo/logo.jpg"></a>
+                <li><a href="index.html" class="animate__animated animate__fadeInDown">Trang chủ</a></li>
+                <li class="sub">
+                    <a href="sanpham.html" class="animate__animated animate__fadeInDown">Sản Phẩm</a>
+                    <ul class="id subcontent">
+                        <li><a href="sanpham.html">MACBOOK</a></li>
+                        <li><a href="#">IPHONE</a></li>
+                        <li><a href="#">APPLE WATCH</a></li>
+                        <li><a href="#">AIRPODS</a></li>
+                        <li><a href="#">IMAC</a></li>
+                        <li><a href="#">IPAD</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="lienhe.html" class="animate__animated animate__fadeInDown">Liên Hệ</a>
+                    <ul class="id subcontent">
+                        <li><a href="lienhe.html">Hỗ Trợ </a></li>
+                        <li><a href="thanhtoan.html">Thanh Toán</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="dangnhap.html" class="animate__animated animate__fadeInDown">Đăng Nhập</a></li> 
+                <div class="animate__animated animate__fadeInRightBig">
+                    <div class="iconmenu">
+                        <li><a href="sanpham.html"><i class="fas fa-search"></i></a></li>
+                        <li><a href="dangnhap.html"><i class="fas fa-user"></i></a></li>
+                        <li><a href="thanhtoan.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </div>
+                </div>
+               
+            </ul>
+        </nav>
+        <!--Icon navigation-->
+        <div class="icon">
+            <table class="table">
+                <tr class="image" >
+                    <td><a href="sanpham.html"><img src="http://www.maccenter.vn/MacFamily/MacBookAir.jpg"></a></td>
+                    <td><a href="sanpham.html"><img src="http://www.maccenter.vn/MacFamily/icon-iMac.jpg"></a></td>
+                    <td><a href="sanpham.html"><img src="http://www.maccenter.vn/MacFamily/iCon-iPhone.jpg"></a></td>
+                    <td><a href="sanpham.html"><img src="http://www.maccenter.vn/MacFamily/iCon-iPad.jpg"></a></td>
+                    <td><a href="sanpham.html"><img src="http://www.maccenter.vn/MacFamily/iCon-AppleWatch.jpg"></a></td>
+                    <td><a href="sanpham.html"><img src="http://www.maccenter.vn/MacFamily/iCon-AirPods.jpg"></a></td>
+                </tr>
+                <tr class="name">
+                    <td><a href="#" style="margin:14% ;">Macbook</a></td>
+                    <td><a href="#" style="margin:29% ;">iMac</a></td>
+                    <td><a href="#" style="margin:25% ;">iPhone</a></td>
+                    <td><a href="#" style="margin:25% ;">iPad</a></td>
+                    <td><a href="#" style="margin:25% ;">iWatch</a></td>
+                    <td><a href="#" style="margin:25% ;">AirPods</a></td>
+                </tr>
+            </table>
+        </div>
+        
+     
+                <div class="sp">
+                    <div class="item">
+                        <img src="chitietsp/sp1_1.jpg" id="mainImg" onclick="zoomImg(this)" >
+                        <div class="thumb">
+                            <div><img src="chitietsp/sp1_1.jpg" onclick="changeImage(this)"></div>
+                            <div><img src="chitietsp/sp1_2.jpg" onclick="changeImage(this)"></div>
+                            <div><img src="chitietsp/sp1_3.jpg" onclick="changeImage(this)"></div>
+                            <div><img src="chitietsp/sp1_4.jpg" onclick="changeImage(this)"></div>
+                        </div>
+                        <div id="boder">
+                            <span id="close-icon"><i class="fas fa-times"></i></span>
+                            <img id="imageZoom"/>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h1>MacBook Pro 16-inch i9</h1>
+                        <p><a href="index.html">Home</a> | <a href="btLon2.html">MacBook</a> | Model: <a href="btLon2.html">MacBook Pro Core i9</a></p>
+                        <p>Apple M1 chip with 8-core CPU, 8-core GPU, 16-core Neural Engine<br>
+
+                            16GB unified memory (Max Option)<br>
+                            
+                            512GB SSD Storage<br>
+                            
+                            2 x ports ThunderBolt 3 / USB 4<br>
+                            
+                            Touch Bar, Touch ID, Magic Keyboard<br>
+                            Retina Display: 500 nits Brightness, Wide Color (P3), True Tone Technology<br>                         
+                        </p>
+                        <hr size="0.5px">
+                        <p id="coin">69.990.000 vnđ</p>
+                        <div class="dh">
+                            <div class="submit" onclick="submit(this)">
+                                <a href="#"><p class="mua">THÊM VÀO GIỎ</p></a>
+                            </div>
+                            <div class="submit1">
+                                <a href="thanhtoan.html"><p class="mua">ĐẶT HÀNG</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thongsokt">
+                    <div><h2>Thông số kỹ thuật</h2></div>
+                    <div><img src="chitietsp/tsKiThuat2.jpg"></div>
+                </div>
+                <div class="thongsokt">
+                    
+                        <div>
+                            <h3><b>Processor:</b></h3>
+                            <h3><b>Memory:</b></h3>
+                            <h3><b>Graphics and Video Support:</b></h3>
+                            <h3><b>Storage:</b></h3>
+                            <h3><b>Display :</b></h3>
+                            <h3><b>Keyboard and Trackpad:</b></h3>
+                            <h3><b>Connection and Expansion:</b></h3>
+                            <h3><b>Wireless:</b></h3>
+                            <h3><b>Camera:</b></h3>
+                            <h3><b>Audio:</b></h3>
+                            <h3><b>Video Support:</b></h3>
+                            <h3><b>Battery and Power:</b></h3>
+                            <h3><b>Size:</b></h3>
+                            <h3><b>Weight:</b></h3>
+                            <h3><b>Warranty:</b></h3>
+                            <h3><b>Box in cluded:</b></h3>
+                        </div>
+                        <div>
+                            <p>Apple M1 chip: 8-core CPU with 4 performance cores and 4 efficiency cores, 8-core GPU, 16-core Neural Engine</p>
+                            <p>16GB unified memory</p>
+                            <p>The 8-core GPU in M1 chip</p>
+                            <p>512GB SSD</p>
+                            <p style="line-height: 1.5;">13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 native resolution at 227 pixels per inch with support for millions of colors<br>
+                                500 nits brightness; Wide color gamut (P3), True Tone technology.</p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        65 (U.S.) or 66 (ISO) keys including 4 arrow keys in an inverted-T arrangement
+                                    </li>
+                                    <li>
+                                        Touch Bar, Touch ID Sensor, Ambient light sensor
+                                    </li>
+                                    <li>
+                                        Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure‑sensitive drawing, and Multi-Touch gestures
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>Two Thunderbolt 3 / USB 4 ports; Support for Charging, DisplayPort, ThunderBolt (up to 40Gbps), USB 3.1 Gen 2 (up to 10 Gbps)</p>
+                            <p>802.11ax WI-FI 6 wireless networking; IEEE 802.11a/b/g/n/ac compatible; Bluetooth 5.0 wireless technology</p>
+                            <p>720p FaceTime HD camera</p>
+                            <p>Stereo speakers with high dynamic range, Three microphones, 3.5 mm Headphone jack</p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        One external display with up to 6K resolution at 60Hz
+                                    </li>
+                                    <li>
+                                        Native DisplayPort output over USB-C: VGA, HDMI, DVI and Thunderbolt 2 output supported using adapters
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Up to 17 hours wireless web; Up to 20 hours Apple TV app movie playback
+                                    </li>
+                                    <li>
+                                        Built-in 58.2-watt-hour lithium-polymer battery 
+                                    </li>
+                                    <li>
+                                        61W USB-C Power Adapter 
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>30.41 x 21.24 x 1.56 cm (Width x Depth x Height)</p>
+                            <p>1.4 kg</p>
+                            <p>1 year</p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        MacBook Pro 13-inch
+                                    </li>
+                                    <li>
+                                        61W USB-C Power Adapter
+                                    </li>
+                                    <li>
+                                        USB-C Charge Cable (2m)
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                </div>
+
+
+                <div class="image1">
+                    <iframe width="1200" height="676" src="https://www.youtube.com/embed/hs1HoLs4SD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="images" class="wow animate__fadeInUp">
+                    <div>
+                        <img src="lienhe hotro/image11.jpg">
+                    </div>
+                    <div>
+                        <img src="lienhe hotro/image12.jpg">
+                    </div>
+                    <div>
+                        <img src="lienhe hotro/image13.jpg">
+                    </div>
+                    <div>
+                        <img src="lienhe hotro/image14.jpg">
+                    </div>
+                </div>
+                <hr id="gachchan">
+
+                <div class="note" >
+                    <div class="note1" >
+                        <p><b>APPLE STORE</b></p>
+                        <a href="sanpham.html"><p>MacBook Pro</p></a>
+                        <a href="sanpham.html"><p>iMac</p></a>
+                        <a href="sanpham.html"><p>iPhone</p></a>
+                        <a href="sanpham.html"><p>iPad, iPad Pro</p></a>
+                        <a href="sanpham.html"><p>Apple Watch</p></a>
+                        <a href="sanpham.html"><p>AirPods</p></a>
+                    </div>
+        
+                    <div class="note1">
+                        <p><b>ACCESSORIES</b></p>
+                        <a href="sanpham.html"><p>Mac Accessories</p></a>
+                        <a href="sanpham.html"><p>Mice & Keyboards</p></a>
+                        <a href="sanpham.html"><p>Mousepads</p></a>
+                        <a href="sanpham.html"><p>Health & Home Devices</p></a>
+                        <a href="sanpham.html"><p>Webcam & Headset</p></a>
+                        <a href="sanpham.html"><p>Stand for MacBook</p></a>
+                    </div>
+        
+                    <div class="note1">
+                        <p><b>AUDIO SYSTEM</b></p>
+                        <a href="sanpham.html"><p>JBL</p></a>
+                        <a href="sanpham.html"><p>Bose</p></a>
+                        <a href="sanpham.html"><p>Sony</p></a>
+                        <a href="sanpham.html"><p>Ultimate Ears</p></a>
+                        <a href="sanpham.html" ><p>Harman Kardon</p></a>
+                        <a href="sanpham.html"><p>Marshall</p></a>
+                    </div>
+        
+                    
+                    <div class="note1">
+                        <p><b>HEADPHONE</b></p>
+                        <a href="sanpham.html"><p>Tai nghe JBL</p></a>
+                        <a href="sanpham.html"><p>Tai nghe Bose</p></a>
+                        <a href="sanpham.html"><p>Tai nghe Skull Candy</p></a>
+                        <a href="sanpham.html"><p>Tai nghe Audio Technica</p></a>
+                        <a href="sanpham.html" ><p>Tai nghe Sudio</p></a>
+                        <a href="sanpham.html"><p>Tai nghe Jabra</p></a>
+                    </div>
+        
+        
+                    <div class="note1">
+                        <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                        <a href="lienhe.html"><p>Chính sách bảo hành</p></a>
+                        <a href="lienhe.html"><p>Chính sách đổi trả</p></a>
+                        <a href="lienhe.html"><p>Chính sách bảo mật thông tin</p></a>
+                        <a href="lienhe.html"><p>Dịch vụ sửa chữa</p></a>
+                        <a href="lienhe.html"><p>Vận chuyển - Thanh toán</p></a>
+                        <a href="lienhe.html"><p>Liên hệ</p></a>
+                    </div>
+                </div>
+        
+                <div class="gioithieu">
+                    <div class=logogt1>
+                        <div class="logogt">
+                            <img src="logo/logo_gioithieu.png" />
+                        </div>
+                        <div class="textgt">
+                            <p >Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                            <p >Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                        </div>
+                    </div>
+                    
+
+
+                    
+                    <div class="hotro" >
+                        <ul class="hotro1">
+                            <li >
+                                <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                                <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                                <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                                <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                            </li>
+                            
+                            <li >
+                                <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                                <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                                <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                            </li>
+                            <li >
+                                <h3> Mạng xã hội</h3>
+                                <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                                <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                                <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                            </li>
+                            <li >
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </li>
+                        </ul>
+        
+                        <div class="icongt">
+                            <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                            <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                            <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                            <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                            <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                            <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="last">
+                    <p>2008 © MACCENTER VIETNAM. ALL RIGHTS RESERVED.</p>
+                </div>
+    </body>
+</html>

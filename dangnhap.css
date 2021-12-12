@@ -1,0 +1,276 @@
+#logo {
+    height: 65px;
+    display: inline;
+}
+#logo img {
+    height: 100%;
+    width:auto;
+    padding: 0px;
+
+}
+#go a{
+    background-color: black ;
+    color:white;
+    padding: 20px;
+    width: 100px;
+    display: flexbox;
+    text-decoration: none;
+    border-radius: 10px;
+    justify-content: center;
+    z-index: 1;
+}
+#go{
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+}
+
+@font-face{
+    src: url(font/HelveticaNeue.ttf.otf);
+    font-family: 'fontdep';
+}
+body{
+    font-family: 'fontdep';
+    padding: 0;
+    margin: 0;
+}
+
+ul.id{ 
+    padding: 0;
+    margin: 0;
+    background-color:black;
+    justify-content: center;
+    list-style-type: none;
+    z-index: 1;
+}
+nav>ul.id{ 
+    display: flex;
+}
+ul.id>li{
+    max-width: 200px;
+    border-right: 1px;
+}
+ul.id>li>a{
+    text-decoration: none;
+    display: block;
+    padding:40px;
+    color:grey;
+}
+ul.id>li>a:hover{
+    color:white;
+    border-radius: 20px;
+}
+.subcontent{
+    display:none;
+}
+.sub:hover .subcontent{
+    display:block;
+    position: absolute;
+}
+.iconmenu {
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.iconmenu li{
+    max-width: 30px;
+}
+.iconmenu li > a{
+    color: white;
+
+}
+.iconmenu li > a > i{
+    width: 100%;
+    padding: 20px;
+    color: rgb(170, 170, 170);
+    transition: 0.3s;
+}
+.iconmenu li > a > i:hover{
+    color: white;
+}
+
+
+
+
+.icon1{
+    width: 1320px;
+    padding: 0px 0px;
+    top:0;
+    left: 0;
+    margin: auto;
+}
+.icon1 img{
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+.name a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+
+.login_main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+.login_main > form > p{
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+.login_main > form > p:hover{
+    color: rgb(173, 1, 1);
+}
+.one{
+    display: flex;
+    border: 1px solid rgb(187, 186, 186);
+    width: 600px;
+    padding: 8px;
+}
+.one1{
+    padding: 5px;
+}
+.one1 > input{
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    width: 550px;
+}
+.login0{
+    padding: 6px;
+    
+}
+.one2 > button{
+    width: 619px;
+    padding: 18px;
+    border: .5px solid rgb(43, 43, 43);
+    background-color: white;
+    transition: 0.4s;
+}
+.one2 > button:hover{
+    background-color:black ;
+    color: white;
+}
+.one2 > a{
+    text-align: center;
+}
+#tk1 > i{
+    color: rgb(58, 58, 58);
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.images > div > img{
+    width: 380px;
+}
+.images > div {
+    padding: 20px;
+}
+
+
+
+#gachchan{
+    border: 0. solid rgb(88, 88, 88);
+    opacity: 0.5;
+}
+.note{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.note1 a{
+    text-decoration: none;
+    color:#5A5A5A;
+}
+.note1> p{
+    color: #970000;
+}
+.note1> a:hover{
+    text-decoration:underline;
+    color: black;
+}
+
+
+.gioithieu{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+.logogt1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.logogt > img{
+    width: 300px;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.textgt >p {
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+}
+
+ul.hotro1{
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content:space-around;
+}
+ul.hotro1 >li{
+    max-width: 500px;
+    color: rgb(155, 155, 155);
+    
+}
+.ul.hotro1 > li > iframe{
+    margin: 0px;
+    padding-top: 50x;
+}
+.hotro1 > li > p > a > i{
+    color: rgb(155, 155, 155);
+}
+.hotro1 > li > p{
+    font-size: 17px;
+}
+.hotro1 > li > h3{
+    font-size: 19px;
+    color: rgb(194, 194, 194);
+}
+.hotro3{
+    padding-bottom: 30px;
+    margin: 0px;
+}
+    
+
+ .icongt{
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+ .icongt > div > img {
+    vertical-align:middle;
+ }
+ .i2 > img{
+    width: 130px;
+    height: 45px;    
+ }
+.last{
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: rgb(138, 138, 138);
+}
+.last > p {
+    font-size: 14px;
+    margin: 0px;
+    padding: 15px;
+}

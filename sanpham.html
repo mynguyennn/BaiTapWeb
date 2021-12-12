@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac Center</title>
+        <link rel="stylesheet"  href="sanpham.css"/>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="java/animate.css"/>
+        <script src="java/wow.min.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+        <script src="BTL.js"></script>
+        <script>
+            $(Document).ready(function(){
+                $("#gototop").hide()
+                    if ($(this).scrollTop() >= 100)
+                    $("#gototop").show()
+                    else
+                    $("#gototop").hide()
+
+                $("#gototop").click(function(){
+                    $("html,body").animate({
+                        scrollTop:0
+                    },1000);
+                })
+            })
+        </script>
+        <script>
+
+            $(Document).ready(function(){
+                $("#menu_sp").hide()
+                $(window).scroll(function(){
+                    if($(this).scrollTop()>=20){
+                        $("#menu_sp").show("slow").css({
+                            "position":"fixed",
+                            "left":0,
+                            "right":0,
+                            "z-index":1,
+                            "top":0
+                        })
+                    }else{
+                        $("#menu_sp").hide("slow")
+                    }
+            })
+            $("ul.tab li a").click(function(){
+                var h = $(this).attr("href")
+
+                    $("html,body").animate({
+                        scrollTop: $(h).prop("offsetTop")
+                    }, 1000);
+                })
+            })
+        </script>
+
+    </head>
+    <body>
+        <div id="go">
+            <a id="gototop" href="javascript:;"><i class="fas fa-chevron-up"></i></a>   
+        </div>
+        <nav class="tcc">
+            <ul class="id">
+                <a href="index.html" id="logo" class="animate__animated animate__fadeInLeftBig"><img src="logo/logo.jpg"></a>
+                <li><a href="index.html" class="animate__animated animate__fadeInDown">Trang chủ</a></li>
+                <li class="sub">
+                    <a href="sanpham.html" class="animate__animated animate__fadeInDown">Sản Phẩm</a>
+                    <ul class="id subcontent">
+                        <li><a href="#sanpham1">MACBOOK</a></li>
+                        <li><a href="#sanpham3">IPHONE</a></li>
+                        <li><a href="#sanpham6">APPLE WATCH</a></li>
+                        <li><a href="#sanpham5">AIRPODS</a></li>
+                        <li><a href="#sanpham2">IMAC</a></li>
+                        <li><a href="#sanpham4">IPAD</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="lienhe.html" class="animate__animated animate__fadeInDown">Liên Hệ</a>
+                    <ul class="id subcontent">
+                        <li><a href="lienhe.html">Hỗ Trợ </a></li>
+                        <li><a href="thanhtoan.html">Thanh Toán</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="dangnhap.html" class="animate__animated animate__fadeInDown">Đăng Nhập</a></li> 
+                <div class="animate__animated animate__fadeInRightBig">
+                    <div class="iconmenu">
+                        <li><a href="sanpham.html"><i class="fas fa-search"></i></a></li>
+                        <li><a href="dangnhap.html"><i class="fas fa-user"></i></a></li>
+                        <li><a href="thanhtoan.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </div>
+                </div>
+               
+            </ul>
+        </nav>
+        <!--Icon navigation-->
+        <div class="icon">
+            <table class="table">
+                <tr class="image" >
+                    <td><a href="#sanpham1"><img src="http://www.maccenter.vn/MacFamily/MacBookAir.jpg"></a></td>
+                    <td><a href="#sanpham2"><img src="http://www.maccenter.vn/MacFamily/icon-iMac.jpg"></a></td>
+                    <td><a href="#sanpham3"><img src="http://www.maccenter.vn/MacFamily/iCon-iPhone.jpg"></a></td>
+                    <td><a href="#sanpham4"><img src="http://www.maccenter.vn/MacFamily/iCon-iPad.jpg"></a></td>
+                    <td><a href="#sanpham5"><img src="http://www.maccenter.vn/MacFamily/iCon-AppleWatch.jpg"></a></td>
+                    <td><a href="#sanpham6"><img src="http://www.maccenter.vn/MacFamily/iCon-AirPods.jpg"></a></td>
+                </tr>
+                <tr class="name">
+                    <td><a href="#" style="margin:14% ;">Macbook</a></td>
+                    <td><a href="#" style="margin:29% ;">iMac</a></td>
+                    <td><a href="#" style="margin:25% ;">iPhone</a></td>
+                    <td><a href="#" style="margin:25% ;">iPad</a></td>
+                    <td><a href="#" style="margin:25% ;">iWatch</a></td>
+                    <td><a href="#" style="margin:25% ;">AirPods</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="menu_sp">
+            <ul class="tab">
+                <a href="index.html"><img id="img_tab" src="logo/logo apple.jpg"></a>
+                <li><a href="#sanpham1">Macbook</a>
+                <li><a href="#sanpham2">iMac</a></li>
+                <li><a href="#sanpham3">iPhone</a></li>
+                <li><a href="#sanpham4">iPad</a></li>
+                <li><a href="#sanpham5">AirPods</a></li>
+                <li><a href="#sanpham6">Watch</a></li>
+                <li><a href="iphone13.html">iPhone 13</a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+                
+                    <!--
+
+                    macbook
+
+                    -->
+                    
+                <div id="sanpham1">
+                    <div class="text-center">
+                        <img  title="Mac-Center" src="sanpham1/macbook.jpg">
+                    </div>
+                    <div class="wow animate__fadeInUp">
+                        <h3>MACBOOK</h3>
+                        <p>
+                            Hiện tại, MacBook Air 2020 với phiên bản chip Apple M1 đã sẵn sàng tại Mac Center.
+                        </p>
+                        <p>
+                            Các bạn có thể ghé thăm để chọn lựa 1 trong 3 màu sắc ưa thích của mình tại Mac Center nhé!
+                        </p>
+                    </div>
+
+                    <div class="sp">
+                        <div class="sp1">
+                            <a href="sanpham1.html"><h4  class="wow animate__zoomIn" id="tensp" >MACBOOK PRO 16" 2021 CORE I9</h4></a>
+                            <div class="sp_hover">
+                                <a href="sanpham1.html"><img src="sanpham1/image2.jpg"/></a>
+                            </div>
+
+                            <div class="wow animate__zoomIn">
+                                <h3>69.990.000đ</h3>
+                                <p style="color: gray;"> 
+                                    <abbg title="Màn hình"><i class="fas fa-desktop"></i> 16.0"&emsp;</abbg>
+                                    <abbg title="CPU"><i class="fas fa-microchip"></i> Core i9&emsp;</abbg>
+                                    <abbg title="RAM"><i class="fas fa-memory"></i> 16 GB&emsp;<br></abbg>
+                                    <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 1 TB&emsp;<br></abbg>
+                                    <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> Radeon Pro 5500M 4GB&emsp;</abbg>
+                                    <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 2.0</abbg>-->
+                                </p>
+                            </div>
+                            <div class="new">new arrival</div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham1.html"><h4 class="wow animate__zoomIn" id="tensp" >MACBOOK PRO 16" 2019 CORE I7</h4></a>
+                        <div class="sp_hover">
+                            <a href="sanpham1.html"><img src="sanpham1/image3.jpg"/></a>
+                        </div>
+                        <div class="wow animate__zoomIn">
+                            <h3>59.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 16.0"&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Core i7&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 16 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 512 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> Radeon Pro 5300M 4GB&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 2.0</abbg>-->
+                            </p>
+                        </div>
+                        <div class="new">new arrival</div>
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham1.html"><h4 class="wow animate__zoomIn" id="tensp" >MACBOOK AIR 13.3 INCH 2020</h4></a>
+                        <div class="sp_hover">
+                            <a href="sanpham1.html"><img src="sanpham1/image4.jpg"/></a>
+                        </div>
+                        <div  class="wow animate__zoomIn">
+                            <h3>22.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 13.3"&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 8 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 256 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> Radeon Pro 5000M 4GB&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 1.6</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham1.html"><h4 class="wow animate__zoomIn" id="tensp" >MACBOOK AIR M1 2020 (GREY)</h4></a>
+                        <div class="sp_hover">
+                            <a href="sanpham1.html"><img src="sanpham1/image5.jpg"/></a>
+                        </div>
+                        <div  class="wow animate__zoomIn">
+                            <h3>34.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 14"&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> i9&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 16 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 1T GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> Radeon Pro 6000M 8GB&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 2.0</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham1.html"><h4 class="wow animate__zoomIn" id="tensp" >MACBOOK PRO 16 INCH I7 2020</h4></a>
+                        <div class="sp_hover">
+                            <a href="sanpham1.html"><img src="sanpham1/image6.jpg"/></a>
+                        </div>
+                        <div class="wow animate__zoomIn">
+                            <h3>28.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 13.3"&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 16 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 256 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> Apple M1&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 1.5</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham1.html"><h4 class="wow animate__zoomIn" id="tensp" >MACBOOK AIR 13 INCH 2020 M1</h4></a>
+                        <div class="sp_hover">
+                            <a href="sanpham1.html"><img src="sanpham1/image7.jpg"/></a>
+                        </div>
+                        <div class="wow animate__zoomIn">
+                            <h3>33.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 14.3"&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 8 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 256 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> Apple M1&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 2.5</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+         <!--
+
+                imac
+
+
+            -->
+            <div id="sanpham2">
+                <div class="imac_sp">
+
+                    <div class="img_imac">
+                        <img class="wow animate__fadeInLeftBig" id="poster" title="Mac-Center" src="sanpham1/image_2.jpg"/>
+                    </div>
+
+                    <div class="wow animate__fadeInRightBig">
+                        <div class="text_imac">
+                            <h3>IMAC 2020</h3>
+                            <p>
+                                Với màn hình Retina Display 5K cực kỳ sắc nét, iMac 2020 sẽ cho bạn một cái nhìn hoàn toàn mới về thế giới Computer All-in-One.
+                            </p>
+                            <p>
+                                Hơn thế nữa, iMac 2020 được trang bị chip xử lý Intel thế hệ 10, Graphic Card Radeon Pro cao cấp cùng ổ cứng SSD cực nhanh... Thật tuyệt vời!
+                            </p>
+                            <div class="icon_imac">
+                                <img src="sanpham1/image_3.png">
+                                <img src="sanpham1/image_4.png">
+                                <img src="sanpham1/image_5.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="sp">
+                    <div class="sp1">
+                        <a href="sanpham2.html"><h4 class="wow animate__zoomIn" id="tensp" >IMAC 24 2021 8GPU 256GB</h4></a>
+                        <div class="sp_hover1">
+                            <a href="sanpham2.html"><img src="sanpham1/image9.jpg"/></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h3>55.000.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 24 inch&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Core i9&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 16 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 256 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> GPU 8 nhân&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 4.6</abbg>-->
+                            </p>
+                        </div>
+                        <div class="new">new arrival</div>
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham2.html"><h4 class="wow animate__zoomIn" id="tensp" >IMAC 2020 CORE I5 512GB</h4></a>
+                        <div class="sp_hover2">
+                            <a href="sanpham2.html"><img src="sanpham1/new1.jpg"/></a>
+                        </div>
+                        <div class="wow animate__zoomIn">
+                            <h3>49.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 27 inch&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 8 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 128 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> GPU 6 nhân&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 4.5</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham2.html"><h4 class="wow animate__zoomIn" id="tensp" >IMAC 4K 21.5 INCH CORE I3</h4></a>
+                        <div class="sp_hover2">
+                            <a href="sanpham2.html"><img src="sanpham1/image10.jpg"/></a>
+                        </div>
+                        <div class="wow animate__zoomIn">
+                            <h3>36.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 27 inch&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 8 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 128 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> GPU 6 nhân&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 4.5</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham2.html"><h4 class="wow animate__zoomIn" id="tensp" >IMAC 21.5 2020 I5 2.3 256GB</h4></a>
+                        <div class="sp_hover2">
+                            <a href="sanpham2.html"><img src="sanpham1/image11.png"/></a>
+                        </div>
+                        <div class="wow animate__zoomIn">
+                            <h3>30.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-desktop"></i> 21.5 inch&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> Core i5&emsp;</abbg>
+                                <abbg title="RAM"><i class="fas fa-memory"></i> 8 GB&emsp;<br></abbg>
+                                <!--<abbg title="Ổ cứng"><i class="fas fa-hdd"></i> SSD 256 GB&emsp;<br></abbg>
+                                <abbg title="Card đồ họa"><i class="fas fa-vr-cardboard"></i> GPU 6 nhân&emsp;</abbg>
+                                <abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 5.44</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+               <!--Iphone-->
+
+
+
+            <div id="sanpham3">
+                <div class="text-center">
+                    <img  class="wow animate__fadeInLeftBig" id="poster" title="Mac-Center" src="sanpham2/anh1.jpg"/>
+                </div>
+
+                <div class="wow animate__fadeInUp">
+                    <h3>IPHONE</h3>
+                    <p>
+                        Các phiên iPhone 12, iPhone 12 Pro đã sẵn sàng cùng bạn trải nghiệm tại Mac Center.
+                    </p>
+                    <p>
+                        Vui lòng gọi số 033.633.4143 - 083.752.5517 để được tư vấn & giao hàng tận nơi.
+                    </p>
+                </div>
+                
+                <div class="sp">
+                    <div class="sp1">
+                        <a href="sanpham3.html"><h4 class="wow animate__zoomIn" id="tensp" >IPHONE 12 PROMAX</h4></a>
+                        <div class="sp_hover3">
+                            <a href="sanpham3.html"><img src="sanpham2/anh2.jpg"/></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h3>34.490.000đ <small style="color: gray;"><del>36.990.000đ</del></small></h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 6.7"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> A14 Bionic&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 256 GB</abbg>-->
+                            </p>
+                        </div>
+                        <div class="new">new arrival</div>
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham3.html"><h4 class="wow animate__zoomIn" id="tensp" >IPHONE 12 PRO</h4></a>
+                        <div class="sp_hover3">
+                            <a href="sanpham3.html"><img src="sanpham2/anh3.jpg"/></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h3>27.990.000đ <small style="color: gray;"><del>29.990.000đ</del></small></h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 6.1"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> A14 Bionic&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 128 GB</abbg>-->
+                            </p>
+                        </div>
+                        <div class="new">new arrival</div>
+
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham3.html"><h4 class="wow animate__zoomIn" id="tensp" >IPHONE 12 MINI </h4></a>
+                        <div class="sp_hover3">
+                            <a href="sanpham3.html"><img src="sanpham2/iphone 12 mini.jpg"/></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h3>20.490.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 6.1"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 12.0 MP&emsp;</abbg>
+                                <!--<abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0 MP&emsp;<br></abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> A14 Bionic&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 64 GB</abbg>-->
+                            </p>
+                        </div>
+                        <div class="new">new arrival</div>
+
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham3.html"><h4 class="wow animate__zoomIn" id="tensp" >IPHONE 11 PROMAX</h4></a>
+                        <div class="sp_hover3">
+                            <a href="sanpham3.html"><img src="sanpham2/iphone 11prm.jpg"/></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h3>20.390.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 6.5"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> A13 Bionic&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 64 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham3.html"><h4 class="wow animate__zoomIn" id="tensp" >IPHONE 11 PRO </h4></a>
+                        <div class="sp_hover3">
+                            <a href="sanpham3.html"><img src="sanpham2/iphone 11pro.jpg"/></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h3>15.390.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 5.8"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> A13 Bionic&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 512 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham3.html"><h4 class="wow animate__zoomIn" id="tensp" >IPHONE XR</h4></a>
+                        <div class="sp_hover3">
+                            <a href="sanpham3.html"><img src="sanpham2/anh7.jpg"/></a>
+                        </div>
+
+                        <div class="wow animate__zoomIn">
+                            <h3>9.490.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 6.1"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 7.0&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> A12 Bionic&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 64 GB</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!--ipad
+            
+            -->
+            <div id="sanpham4">
+                <div class="text-center">
+                    <img class="wow animate__fadeInRightBig" id="poster1" title="Mac-Center" src="sanpham2/anh8.jpg"/>
+                </div>
+    
+                <div class="wow animate__fadeInUp">
+                    <h3>IPAD</h3>
+                    <p>
+                        Với chip xử lý M1 cực mạnh, iPad Pro xứng đáng là chiếc máy tính bảng mạnh nhất trong thế giới Tablet hiện nay.
+                    </p>
+                    <p>
+                        Nay, iPad Pro 2021 đã xuất hiện và sẵn sàng cùng bạn sở hữu ngay hôm nay tại Mac Center.
+                    </p>
+                </div>
+                
+                <div class="sp">
+                    <div class="sp1">
+                        <a href="sanpham4.html"><h4 class="wow animate__zoomIn" id="tensp" >IPAD PRO 12.9 INCH (2021)</h4></a>
+                        <div class="sp_hover4">
+                            <a href="sanpham4.html"><img src="sanpham2/anh9.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>38.490.000đ <small style="color: gray;"><del>40.990.000đ</del></small></h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 12.9"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 10.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1 8 nhân&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 256 GB</abbg>-->
+                            </p>
+                        </div>
+                        <div class="new">new arrival</div>
+                    </div>
+                    
+                    <div class="sp1">
+                        <a href="sanpham4.html"><h4 class="wow animate__zoomIn" id="tensp" >IPAD 10.2 INCH <br>(2020)</h4></a>
+                        <div class="sp_hover4">
+                            <a href="sanpham4.html"><img src="sanpham2/anh12.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>33.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 12.9"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 10.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1 8 nhân&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 256 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham4.html"><h4 class="wow animate__zoomIn" id="tensp" >IPAD AIR 10.9 INCH <br>(Sky Blue)</h4></a>
+                        <div class="sp_hover4">
+                            <a href="sanpham4.html"><img src="sanpham2/ipad1.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>22.790.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 11"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP + 10.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 12.0 MP&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> Apple M1 8 nhân&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 128 GB</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="sp1">
+                        <a href="sanpham4.html"><h4 class="wow animate__zoomIn" id="tensp" >IPAD AIR 10.9 INCH <br>(Rose)</h4></a>
+                        <div class="sp_hover4">
+                            <a href="sanpham4.html"><img src="sanpham2/ipad 2.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>16.790.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 10.9"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 7 MP&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> Apple A14 Bionic 6 nhân&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 64 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham4.html"><h4 class="wow animate__zoomIn" id="tensp" >IPAD AIR 10.9 INCH <br>(Green)</h4></a>
+                        <div class="sp_hover4">
+                            <a href="sanpham4.html"><img src="sanpham3/new3.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>14.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 10.9"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 7 MP&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> Apple A14 Bionic 6 nhân&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 64 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham4.html"><h4 class="wow animate__zoomIn" id="tensp" >IPAD AIR 10.9 INCH <br>(Gray)</h4></a>
+                        <div class="sp_hover4">
+                            <a href="sanpham4.html"><img src="sanpham3/new4.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>14.790.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Màn hình"><i class="fas fa-mobile-alt"></i> 10.9"</abbg></abbr>&emsp;
+                                <abbg title="Camera sau"><i class="fas fa-camera"></i> 12.0 MP&emsp;</abbg>
+                                <abbg title="Camera Selfie"><i class="fas fa-portrait"></i> 7 MP&emsp;<br></abbg>
+                                <!--<abbg title="CPU"><i class="fas fa-microchip"></i> Apple A14 Bionic 6 nhân&emsp;<br></abbg>
+                                <abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 64 GB</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </div>
+
+
+
+            <!--AirPod-->
+
+
+            <div id="sanpham5">
+                <div class="text-center">
+                    <img class="wow animate__fadeInLeftBig" id="poster" title="Mac-Center" src="sanpham3/image1.jpg"/>
+                </div>
+                <div class="wow animate__fadeInUp">
+                    <h3>AIRPOD</h3>
+                    <p>
+                        Hiện tại, Mac Center đang sẵn sàng có 2 phiên bản cho bạn lựa chọn: AirPods 2 và AirPods Pro.
+                    </p>
+                    <p>
+                        Với sự tương thích tuyệt vời cùng chất âm hoàn hảo từ Airpods, chắc chắn bạn sẽ yêu nó ngay khi có trên tay...
+                    </p>
+                </div>
+                <div class="sp">
+                    <div class="sp1">
+                        <a href="sanpham5.html"><h4 class="wow animate__zoomIn" id="tensp" >AIRPODS PRO</h4></a>
+                        <div class="sp_hover5">
+                            <a href="sanpham5.html"><img src="sanpham3/image2.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>4.390.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Cổng sạc"><i class="fas fa-charging-station"></i> Lightning</abbg></abbr>&emsp;
+                                <abbg title="Bluetooth"><i class="fas fa-network-wired"></i> Bluetooth 5.0&emsp;</abbg>
+                                <abbg title="Thời gian sử dụng"><i class="fas fa-clock"></i> 5 giờ&emsp;<br></abbg>
+                                <!--<abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 40g</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="sp1">
+                        <a href="sanpham5.html"><h4 class="wow animate__zoomIn" id="tensp" >AIRPODS 2</h4></a>
+                        <div class="sp_hover6">
+                            <a href="sanpham5.html"><img src="sanpham3/airpod.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>2.500.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Cổng sạc"><i class="fas fa-charging-station"></i> Lightning</abbg></abbr>&emsp;
+                                <abbg title="Bluetooth"><i class="fas fa-network-wired"></i> Bluetooth 5.0&emsp;</abbg>
+                                <abbg title="Thời gian sử dụng"><i class="fas fa-clock"></i> 5 giờ&emsp;<br></abbg>
+                                <!--<abbg title="Trọng lượng"><i class="fas fa-weight-hanging"></i> 40g</abbg>-->
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="sp1">
+                        <a href="sanpham5.html"><h4 class="wow animate__zoomIn" id="tensp" >AIRPODS MAX</h4></a>
+                        <div class="sp_hover7">
+                            <a href="sanpham5.html"><img src="sanpham3/image3.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>13.990.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Cổng sạc"><i class="fas fa-charging-station"></i> Lightning</abbg></abbr>&emsp;
+                                <abbg title="Bluetooth"><i class="fas fa-network-wired"></i> Bluetooth&emsp;</abbg>
+                                <abbg title="Thời gian sử dụng"><i class="fas fa-clock"></i> 20 giờ&emsp;<br></abbg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Apple watch-->
+            <div id="sanpham6">
+                <div class="text-center">
+                    <img class="wow animate__fadeInRightBig" id="poster" title="Mac-Center" src="sanpham1/apple watch.jpg"/>
+                </div>
+    
+                <div class="wow animate__fadeInUp">
+                    <h3>APPLE WATCH</h3>
+                    <p>
+                        Apple Watch Series 6 và SE hoàn toàn mới hiện tại đã có mặt tại Mac Center
+                    </p>
+                    <p>
+                        Chip xử lý nhanh hơn cùng nhiều tính năng mạnh mẽ thú vị hơn đang sẵn sàng chờ bạn khám phá...
+                    </p>
+                </div>
+                
+                <div class="sp">
+                    <div class="sp1">
+                        <a href="sanpham6.html"><h4 class="wow animate__zoomIn" id="tensp" >APPLE WATCH SERIES 6 GPS (Gold)</h4></a>
+                        <div class="sp_hover8">
+                            <a href="sanpham6.html"><img src="sanpham3/anh2.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>10.300.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Kích thước màn hình"><i class="fas fa-mobile"></i> 40mm</abbg></abbr>&emsp;
+                                <abbg title="Chất liệu dây"><i class="fas fa-code-branch"></i> Cao su&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> S6&emsp;<br></abbg>
+                                <!--<abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 32 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="sp1">
+                        <a href="sanpham6.html"><h4 class="wow animate__zoomIn" id="tensp" >APPLE WATCH SERIES 6 GPS (Gray)</h4></a>
+                        <div class="sp_hover9">
+                            <a href="sanpham6.html"><img src="sanpham3/anh3.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>9.000.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Kích thước màn hình"><i class="fas fa-mobile"></i> 40mm</abbg></abbr>&emsp;
+                                <abbg title="Chất liệu dây"><i class="fas fa-code-branch"></i> Cao su&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> S5&emsp;<br></abbg>
+                                <!--<abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 32 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="sp1">
+                        <a href="sanpham6.html"><h4 class="wow animate__zoomIn" id="tensp" >APPLE WATCH SERIES 6 GPS (Red)</h4></a>
+                        <div class="sp_hover10">
+                            <a href="sanpham6.html"><img src="sanpham3/anh4.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>9.490.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Kích thước màn hình"><i class="fas fa-mobile"></i> 40mm</abbg></abbr>&emsp;
+                                <abbg title="Chất liệu dây"><i class="fas fa-code-branch"></i> Cao su&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> S5&emsp;<br></abbg>
+                                <!--<abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 32 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham6.html"><h4 class="wow animate__zoomIn" id="tensp" >APPLE WATCH SERIES 5 (White)</h4></a>
+                        <div class="sp_hover11">
+                            <a href="sanpham6.html"><img src="sanpham3/new1.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>8.800.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Kích thước màn hình"><i class="fas fa-mobile"></i> 40mm</abbg></abbr>&emsp;
+                                <abbg title="Chất liệu dây"><i class="fas fa-code-branch"></i> Cao su&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> S5&emsp;<br></abbg>
+                                <!--<abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 32 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham6.html"><h4 class="wow animate__zoomIn" id="tensp" >APPLE WATCH NIKE SE (Gold)</h4></a>
+                        <div class="sp_hover12">
+                            <a href="sanpham6.html"><img src="sanpham3/new2.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>8.490.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Kích thước màn hình"><i class="fas fa-mobile"></i> 40mm</abbg></abbr>&emsp;
+                                <abbg title="Chất liệu dây"><i class="fas fa-code-branch"></i> Cao su&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> S5&emsp;<br></abbg>
+                                <!--<abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 32 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sp1">
+                        <a href="sanpham6.html"><h4 class="wow animate__zoomIn" id="tensp" >APPLE WATCH NIKE SE (Black)</h4></a>
+                        <div class="sp_hover13">
+                            <a href="sanpham6.html"><img src="sanpham3/hover1.jpg"/></a>
+                        </div>
+    
+                        <div class="wow animate__zoomIn">
+                            <h3>8.000.000đ</h3>
+                            <p style="color: gray;"> 
+                                <abbg title="Kích thước màn hình"><i class="fas fa-mobile"></i> 40mm</abbg></abbr>&emsp;
+                                <abbg title="Chất liệu dây"><i class="fas fa-code-branch"></i> Cao su&emsp;</abbg>
+                                <abbg title="CPU"><i class="fas fa-microchip"></i> S5&emsp;<br></abbg>
+                                <!--<abbg title="Bộ nhớ trong"><i class="fas fa-memory"></i> 32 GB</abbg>-->
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="hinhanh2">
+        <div class="hinhanh2-1">
+            <div ><img src="chitietsp/poster7.jpg"></div>
+        </div>
+        <div class="hinhanh2-1">
+            <div ><img src="chitietsp/poster8.jpg" ></div>
+        </div>
+        <div class="hinhanh2-1">
+            <div ><img src="chitietsp/poster9.jpg" ></div>
+        </div>
+        <div class="hinhanh2-1">
+            <div ><img src="chitietsp/poster10.jpg" ></div>
+        </div>
+    </div>
+
+    <hr id="gachchan">
+    <div class="note" >
+        <div class="note" >
+            <div class="note1" >
+                <p><b>APPLE STORE</b></p>
+                <a href="sanpham.html"><p>MacBook Pro</p></a>
+                <a href="sanpham.html"><p>iMac</p></a>
+                <a href="sanpham.html"><p>iPhone</p></a>
+                <a href="sanpham.html"><p>iPad, iPad Pro</p></a>
+                <a href="sanpham.html"><p>Apple Watch</p></a>
+                <a href="sanpham.html"><p>AirPods</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>ACCESSORIES</b></p>
+                <a href="sanpham.html"><p>Mac Accessories</p></a>
+                <a href="sanpham.html"><p>Mice & Keyboards</p></a>
+                <a href="sanpham.html"><p>Mousepads</p></a>
+                <a href="sanpham.html"><p>Health & Home Devices</p></a>
+                <a href="sanpham.html"><p>Webcam & Headset</p></a>
+                <a href="sanpham.html"><p>Stand for MacBook</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>AUDIO SYSTEM</b></p>
+                <a href="sanpham.html"><p>JBL</p></a>
+                <a href="sanpham.html"><p>Bose</p></a>
+                <a href="sanpham.html"><p>Sony</p></a>
+                <a href="sanpham.html"><p>Ultimate Ears</p></a>
+                <a href="sanpham.html" ><p>Harman Kardon</p></a>
+                <a href="sanpham.html"><p>Marshall</p></a>
+            </div>
+
+            
+            <div class="note1">
+                <p><b>HEADPHONE</b></p>
+                <a href="sanpham.html"><p>Tai nghe JBL</p></a>
+                <a href="sanpham.html"><p>Tai nghe Bose</p></a>
+                <a href="sanpham.html"><p>Tai nghe Skull Candy</p></a>
+                <a href="sanpham.html"><p>Tai nghe Audio Technica</p></a>
+                <a href="sanpham.html" ><p>Tai nghe Sudio</p></a>
+                <a href="sanpham.html"><p>Tai nghe Jabra</p></a>
+            </div>
+
+
+            <div class="note1">
+                <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                <a href="lienhe.html"><p>Chính sách bảo hành</p></a>
+                <a href="lienhe.html"><p>Chính sách đổi trả</p></a>
+                <a href="lienhe.html"><p>Chính sách bảo mật thông tin</p></a>
+                <a href="lienhe.html"><p>Dịch vụ sửa chữa</p></a>
+                <a href="lienhe.html"><p>Vận chuyển - Thanh toán</p></a>
+                <a href="lienhe.html"><p>Liên hệ</p></a>
+            </div>
+        </div>
+    
+
+         <div class="gioithieu">
+            <div class=logogt1>
+                <div class="logogt">
+                    <img src="logo/logo_gioithieu.png" />
+                </div>
+                <div class="textgt">
+                    <p >Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                    <p >Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                </div>
+            </div>
+            
+            
+            <div class="hotro" >
+                <ul class="hotro1">
+                    <li >
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                        <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                        <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                        <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                    </li>
+                    
+                    <li >
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                        <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                        <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                    </li>
+                    <li >
+                        <h3> Mạng xã hội</h3>
+                        <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                        <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                        <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                    </li>
+                    <li >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </li>
+                </ul>
+
+                <div class="icongt">
+                    <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="last">
+            <p>2008 © MACCENTER VIETNAM. ALL RIGHTS RESERVED.</p>
+        </div>
+    </body>
+</html>

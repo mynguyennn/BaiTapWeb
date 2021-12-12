@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac Center</title>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <meta name=keyword content="May tinh,laptop, gia re">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="iphone13.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="java/animate.css"/>
+        <script src="java/wow.min.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+        <script src="BTL.js"></script>
+        <script>
+            $(Document).ready(function(){
+                $("#gototop").hide()
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop()>=100){
+                        $("nav").css({
+                            "position":"fixed",
+                            "left":0,
+                            "right":0,
+                            "z-index":1
+                        })
+                    }else{
+                        $("nav").css({
+                            "position":"relative",
+                            "left":0,
+                            "right":0,
+                            "z-index":1
+                        })
+                    }
+                    if ($(this).scrollTop() >= 100)
+                    $("#gototop").show()
+                    else
+                    $("#gototop").hide()
+                })
+
+                $("#gototop").click(function(){
+                    $("html,body").animate({
+                        scrollTop:0
+                    },1000);
+                })
+            })
+        </script>
+        <script>
+            $(document).ready(function(){
+
+                  $(".tab-content div:not(:first-child)").hide()
+
+                  $("ul.tab a").click(function(){
+                      event.preventDefault()
+                      //xu ly tab
+                      $("ul.tab a").removeClass("active")
+                      $(this).addClass("active")
+
+                      //xu ly content
+                      var tab=$(this).attr("href")
+                      $(".tab-content div").hide()
+                      $(tab).show()
+                  })
+            })
+      </script>
+    </head>
+    <body>
+        <div id="go">
+            <a id="gototop" href="javascript:;"><i class="fas fa-chevron-up"></i></a>   
+        </div>
+        <nav class="tcc">
+            <ul class="id">
+                <a href="index.html" id="logo" class="animate__animated animate__fadeInLeftBig"><img src="logo/logo.jpg"></a>
+                <li><a href="index.html" class="animate__animated animate__fadeInDown">Trang chủ</a></li>
+                <li class="sub">
+                    <a href="sanpham.html" class="animate__animated animate__fadeInDown">Sản Phẩm</a>
+                    <ul class="id subcontent">
+                        <li><a href="sanpham.html">MACBOOK</a></li>
+                        <li><a href="#">IPHONE</a></li>
+                        <li><a href="#">APPLE WATCH</a></li>
+                        <li><a href="#">AIRPODS</a></li>
+                        <li><a href="#">IMAC</a></li>
+                        <li><a href="#">IPAD</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="lienhe.html" class="animate__animated animate__fadeInDown">Liên Hệ</a>
+                    <ul class="id subcontent">
+                        <li><a href="lienhe.html">Hỗ Trợ </a></li>
+                        <li><a href="thanhtoan.html">Thanh Toán</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="dangnhap.html" class="animate__animated animate__fadeInDown">Đăng Nhập</a></li> 
+                <div class="animate__animated animate__fadeInRightBig">
+                    <div class="iconmenu">
+                        <li><a href="sanpham.html"><i class="fas fa-search"></i></a></li>
+                        <li><a href="dangnhap.html"><i class="fas fa-user"></i></a></li>
+                        <li><a href="thanhtoan.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </div>
+                </div>
+               
+            </ul>
+        </nav>
+
+
+
+
+        <div class="wow animate__fadeInUp">
+            <div class="text">
+                <h4>iPhone 13</h4>
+                <p>Dự kiến ra mắt 14/9, 4 phiên bản, 2 màu nổi bật cam và hồng, giá khoảng 16 - 35 triệu</p>
+            </div>
+            <div class="text1">
+                <p>Learn more <i class="far fa-angle-right"></i></p>
+                <p>Buy <i class="far fa-angle-right"></i></p>
+            </div>
+            </div>
+    
+            <div class="wow animate__fadeInUp">
+            <div class="poster">
+                <img src="iphone 13/poster1.jpg">
+            </div>
+            </div>
+    
+            <div class="container">
+                <div class="gallery-display-area">
+                    <div class="gallery-wrap">
+                        <div class="image">
+                            <img src="iphone 13/pic1.jpeg" />
+                        </div>
+                        <div class="image">
+                            <img src="iphone 13/pic2.jpeg" />
+                        </div>
+                        <div class="image">
+                            <img src="iphone 13/anh8.png" />
+                        </div>
+                        <div class="image">
+                            <img src="iphone 13/pic1.jpeg" />
+                        </div>
+                        <div class="image">
+                            <img src="iphone 13/pic2.jpeg" />
+                        </div>             
+                    </div>
+                </div>
+            </div>
+    
+    
+           <section>
+               <ul class="tab">
+                    <li><a href="#tab1" class="active">Các phiên bản, màu sắc, giá</a></li>
+                    <li><a href="#tab2">Cấu hình vượt trội, tính năng nổi bật</a></li>
+                    <li><a href="#tab3">Nhập thông tin, đặt hàng trước</a></li>
+               </ul>
+    
+               <div class="tab-content">
+                    <div id="tab1">
+                        <section class="text_main1">
+                            <section class="text_tab1">
+                                <h1>
+                                    1. Các phiên bản, màu sắc, giá bán của iPhone 13
+                                </h1>
+                                <p>
+                                    Dòng iPhone 2021 sẽ trông tương tự như dòng iPhone 2020, với bốn thiết bị có kích thước bao gồm 5.4 inch, 6.1 inch và 6.7 inch. Trong đó 2 chiếc iPhone là mẫu "Pro" cao cấp hơn và hai chiếc được định vị là có chi phí thấp hơn, thiết bị hợp lý hơn là iPhone 13 và iPhone 13 mini.
+                                </p>
+                                <p>
+                                    Lưu ý:<br>
+                                    <ul class="luuy">
+                                        <li>(*) Giá bán của iPhone 13 Pro Max đang được dự đoán là 1.099 USD (khoảng 25 triệu đồng) cho bản 128 GB.</li>
+                                        <li>Hiện tại những thông tin về iPhone 13 Pro Max trong bài này đang dựa trên những thông tin rò rỉ chính xác nhất. Ngay khi iPhone 13 Pro Max chính thức ra mắt, mình sẽ cập nhật lại nội dung trong bài viết này, các bạn có thể yên tâm theo dõi nhé!</li>
+            
+                                    </ul>
+                                </p>
+                            </section>
+    
+                            <section class="image_tab1">
+                                <img src="iphone 13/image2.png">
+                            </section>
+                        </section>
+                        
+                        <section class="text_main2">
+                                
+                            <section class="image_tab2">
+                                <img src="iphone 13/anh2.png">
+                            </section>
+    
+                            <section  class="text_tab2">
+                                <p>Nhà phân tích Dan Ives của Wedbush gần đây đã tiết lộ một số tính năng được mong đợi của dòng Apple iPhone 13. Điều thú vị là trong báo cáo này, cũng dự đoán thêm ngày ra mắt của dòng iPhone mới.</p>
+                                <p>Phiên bản <b>màu da cam</b> (Sunset Gold) đón nhận được sự quan tâm của iFan, khi nhiều thông tin về dòng iPhone 13 màu da cam đã đem lại cảm giác đặc biệt thu hút người dùng so với dòng iPhone màu vàng trước đây. </p>     
+                                <p>iPhone 2021 có khả năng được xác định là phiên bản cải tiến của iPhone 12 hiện tại. Apple cũng đang dự tính điều chỉnh màu Graphite và tạo cho nó một lớp đen mờ trên iPhone 13 Pro.</p>
+                                <p>Đồng thời, hãng cũng tiết lộ 2 màu mới xuất hiện trên iPhone 13 Pro và iPhone 13 Pro Max là <b>màu da cam</b> (Sunset Gold) và <b>màu vàng hồng</b> (Rose Gold), bên cạnh 2 màu truyền thống là đen và trắng.</p>
+                                <p>Đối với phiên bản <b>màu vàng hồng</b> (Rose Gold) đầy huyền bí, sang trọng đặc biệt thu hút các iFan là phái nữ. Với đường nét, góc cạnh sắc bén và sản phẩm này hứa hẹn sẽ là phiên bản chủ đạo của Apple.</p>
+                            </section>
+    
+                        </section>
+                        
+                        <section class="text_main3">
+    
+                            <section class="text_tab3">
+                                <h1>2. Thiết kế iPhone 13 Pro Max sẽ có notch tai thỏ nhỏ. iPhone 13 Pro Max năm nay sẽ gây hot?</h1>
+                                <p>Dựa trên những hình ảnh, video concept rò rỉ đến thời điểm hiện tại, phong cách thiết kế của iPhone 13 Pro Max có nhiều nét tương đồng với iPhone 12 Pro Max. Thiết bị vẫn sẽ sở hữu khung viền vuông vức, mặt lưng kính nhám cùng màn hình tai thỏ nằm ở phía trước.</p>
+                                <section class="image_tab3">
+                                    <img src="iphone 13/anh3.png">
+                                </section>
+                                <p>Tuy nhiên, để tăng độ nhận diện cho sản phẩm mới thì Apple có thể sẽ cung cấp thêm 2 phiên bản màu sắc mới lạ cho iPhone 13 Pro Max, đó là màu cam (Sunset Gold) và màu hồng (Rose Pink). </p>
+                                <p>Thực sự mỗi người sẽ có một sở thích riêng về màu sắc nhưng cá nhân mình rất ấn tượng với 2 tùy chọn màu sắc mới là màu cam (Sunset Gold) và màu hồng (Rose Pink) của iPhone 13 Pro Max. Mình rất mong chờ 2 phiên bản màu mới trên iPhone 13 Pro Max thực tế sẽ trông như thế nào, hy vọng là khớp với những hình ảnh render, video concept rò rỉ trong thời gian gần đây.</p>
+                                <p>Đặc biệt khi mới đây, concept về màu Sunset Gold trên iPhone 13 Pro Max lại xuất hiện càng khiến mình mong chờ hơn về phiên bản màu này tren chiếc smartphone cao cấp nhất nhà Táo. Các đường nét, góc cạnh với cách phối màu cam cuốn hút hứa hẹn sẽ trở thành phiên bản màu chủ đạo trong năm nay của Apple.</p>
+                                <section class="image_tab4">
+                                    <img src="iphone 13/anh5.png">
+                                </section>
+                                <p>Ngoài ra, phần notch tai thỏ của iPhone 13 Pro Max năm nay sẽ được làm bé hơn đôi chút so với iPhone 12 Pro Max. Đã có rất nhiều bản concept hay mô hình của iPhone 13 Pro Max cũng đã phần nào khẳng định điều này. Cá nhân mình thì đánh giá cao sự thay đổi này bởi vì theo mình thì đây là việc mà Apple phải làm ngay từ thế hệ iPhone 12 Series chứ không phải là đến dòng iPhone 13 mới thực hiện.</p>
+                                <p>Kiểu dáng của iPhone 13 series dự kiến là một trong những nâng cấp rõ rệt nhất trong năm nay. Thiết bị này sẽ được trang bị màn hình notch nhỏ hơn trước, giúp người dùng trải nghiệm không gian hiển thị lớn, nhiều nội dung hơn. Phần viền màn hình cũng được làm mỏng đi, tạo cảm giác hấp dẫn cho sản phẩm.</p>
+                                <p>Ở mặt sau, cụm camera sẽ to hơn khá nhiều so với iPhone 12 series. Riêng 2 phiên bản iPhone 13 mini và iPhone 13 sẽ chuyển sang bố trí 2 camera sau nằm chéo nhau. Sự thay đổi này sẽ tạo nên nét riêng biệt so với tiền nhiệm.</p>
+                                <section class="image_tab6">
+                                    <img src="iphone 13/pic3.jpg">
+                                </section>
+                                <p>Song song đó, màn hình iPhone 13 cũng sẽ được trang bị thêm tính năng Always On Display. Nhờ vậy người dùng có thể dễ dàng xem các thông báo nhanh mà không cần phải mở khóa màn hình. Phiên bản iPhone 13 Pro và Pro Max sẽ được trang bị màn hình 120 Hz.</p>
+                                <p>Gần như chắc chắn iPhone 13 series sẽ được trang bị con chip Apple A15 Bionic thay vì Apple M1 như nhiều tin đồn khác. Dòng chip Apple A series vẫn có hiệu năng mạnh mẽ khi so với các dòng chip khác trên thị trường. Chưa kể, A15 Bionic được TSMC sản xuất trên tiến trình 5nm+ thay vì 5nm như trên A14 Bionic. Nhờ vậy hiệu năng cũng như khả năng tiết kiệm điện trên iPhone 13 sẽ tốt hơn nhiều khi so với dòng iPhone 12.</p>
+                                <p>Dòng iPhone 13 có dung lượng pin lớn hơn so với dòng iPhone 12 và sẽ được bổ sung tính năng mới là sạc ngược không dây, tuy nhiên sẽ chỉ khả dụng đối với các thiết bị của Apple như AirPods, Apple Watch…</p>
+                                <section class="image_tab5">
+                                    <img src="iphone 13/pic4.jpg">
+                                </section>
+                                <p>Hiện tại, ghi nhận ở các đại lý ủy quyền chính thức của Apple tại Việt Nam như MAC CENTER (maccenter.vn), các phiên bản dự kiến của iPhone 13 series được cập nhật liên tục. Về giá bán, nhiều thông tin rò rỉ cho thấy phiên bản rẻ nhất là 13 mini sẽ được lên kệ với mức giá là 699 USD (khoảng 15,9 triệu đồng), iPhone 13 sẽ được bán với giá khởi điểm 799 USD (khoảng 18,2 triệu đồng). Trong khi đó, 2 phiên bản 13 Pro và 13 Pro Max có giá lần lượt 999 USD (khoảng 22,8 triệu đồng) và 1.099 USD (khoảng 25,1 triệu đồng).</p>
+                                <p>Như vậy, rất có thể mẫu iPhone 13 màu hồng vốn được rất nhiều sự mong đợi từ người dùng và các iFan sẽ xuất hiện bên cạnh những màu cơ bản như Đen - Trắng - Đỏ. Bên cạnh đó còn có thể xuất hiện những màu rất lạ như Cam hay Tím .</p>
+                            </section>
+    
+                            
+    
+                        </section>
+                        
+                        <section class="video_tab">
+                            <iframe width="1200" height="570" src="https://www.youtube.com/embed/jnncQE6nh-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </section>
+                    </div>
+                    <div id="tab2">
+                        <section class="text_main4">
+                            <section class="text_tab4">
+                                <h1>
+                                    3. Thiết kế và cấu hình vượt trội của iPhone 13
+                                </h1>
+                                <p>
+                                    Theo trang Mac Otakara của Nhật Bản, những chiếc iPhone mới sẽ có cùng kích thước với các mẫu iPhone 12, nhưng độ dày có thể tăng thêm khoảng 0,26 mm. Các mẫu iPhone 13 cũng được cho là sẽ nặng hơn một chút do có pin lớn hơn.<br>Nhà phân tích nổi tiếng Ming-Chi Kuo tuyên bố rằng Apple sẽ xuất xưởng iPhone 13 với notch (tai thỏ) nhỏ gọn hơn, tận dụng không gian tiết kiệm được để tăng dung lượng pin cho máy.
+                                </p>
+                                <p>Bên cạnh đó, Apple lại vừa mới nhận thêm một bằng sáng chế từ Văn phòng Nhãn hiệu và Bằng sáng chế Hoa Kỳ về cảm biến quang học tích hợp vào tấm nền điện thoại. Có khả năng cảm biến này đóng vai trò là bộ phận quét vân tay và tạo bản đồ 3D của khuôn mặt. Thậm chí có thể tùy biến thành camera selfie.                            </p>
+                                <p>Nói cách khác, đây có thể trở thành tính năng Touch ID, Face ID và cả camera selfie bên dưới màn hình. Tuy nhiên, theo nhiều nguồn thông tin thì công nghệ này có thể chưa xuất hiện trong loạt iPhone 13 sắp ra mắt.</p>
+                            
+                            </section>
+                            
+                            <section class="image_tab7">
+                                <img src="iphone 13/gif.gif">
+                            </section>
+    
+                            <section class="text_tab4">
+                                <p>Camera được hoàn thiện, đem lại trải nghiệm tốt nhất</p>
+                                <p>Nếu trước đó, camera chính được nâng lên trên bề mặt của bảng điều khiển phía sau và các ống kính riêng lẻ nhô ra cao hơn thì giờ đây, toàn bộ cụm camera sẽ được bao phủ bởi một lớp kính bảo vệ chung. </p>
+                                <p>Điều này sẽ cho phép người dùng có thể làm sạch các camera bằng một thao tác chuyển động mà không cần phải lau từng mô-đun một.</p>
+                                <p>Nhà phân tích Ming-Chi Kuo của Apple đã đưa ra dự đoán các mẫu iPhone 13 Pro, Apple sẽ mang đến một số cải tiến lớn cho camera góc siêu rộng. Chúng sẽ có khẩu độ f/1.8 rộng hơn nhiều với ống kính 6P. Cảm biến mới cũng sẽ có tính năng tự động lấy nét để cho phép chụp ảnh macro. Apple cũng sẽ sử dụng thiết lập góc siêu rộng tương tự trên dòng iPhone 14 năm 2022 của mình.</p>
+                                <p>Một báo cáo mới từ DigiTimes tuyên bố rằng toàn bộ dòng sản phẩm iPhone 13 dự kiến ​​sẽ sử dụng máy quét LiDar và sẽ không giới hạn ở các mẫu Pro.</p>
+                                <p>Máy quét LiDAR trên iPhone không chỉ cải thiện khả năng phát hiện độ sâu cho máy ảnh mà còn chứng tỏ độ chính xác cao đối với Thực tế tăng cường. Apple gần đây đã tập trung rất nhiều vào AR và đó có thể là một trong những lý do để tích hợp cảm biến trên toàn bộ dòng sản phẩm trong năm nay.</p>
+                            </section>
+    
+                            <section class="image_tab8">
+                                <img src="iphone 13/pic5.jpg">
+                            </section>
+                        </section>
+                        
+                        <section class="text_main5">
+    
+                            <section class="text_tab5">
+                                <h1>4. Trang bị màn hình ProMotion OLED 120Hz</h1>
+                                <p>Nhiều khả năng Apple sẽ sử dụng tấm nền ProMotion OLED 120Hz trên iPhone 13 Pro và iPhone 13 Pro Max. Điều này sẽ cho phép công ty phân loại tốt hơn các phiên bản Pro của mình so với các phiên bản còn lại. Apple cũng sẽ sử dụng màn hình cảm ứng on-cell trên cả 4 mẫu iPhone 13. </p>
+                                <p>Có nhiều tin đồn rằng Apple sẽ sử dụng tấm nền OLED 120Hz trên iPhone 12, nhưng điều đó đã không xảy ra. Tuy nhiên, vào thời điểm iPhone 13 ra mắt vào năm nay, công nghệ đằng sau tấm nền LTPO OLED với tốc độ làm mới 120Hz động sẽ hoàn thiện hơn, cho phép Apple áp dụng nó trên iPhone.</p>
+                            </section>
+    
+                            <section class="image_tab9">
+                                <img src="iphone 13/pic6.jpg">
+                            </section>
+    
+                        </section>
+    
+                        <section class="text_main6">
+    
+                            <section class="text_tab6">
+                                <h1>5. Chip Apple A15 Bionic giúp tối ưu hiệu năng sử dụng</h1>
+                                <p>Về cấu hình, toàn bộ dòng iPhone 13 sẽ được trang bị chip A15 bionic mới nhất. Các tin tức trước đó cho rằng con chip này vẫn sử dụng quy trình 5 nm cũ, tuy nhiên theo như dự đoán thì đây lại là loại chip 5 nm thế hệ thứ hai của TSMC và điều này được đánh giá sẽ giúp tối ưu điện năng sử dụng và mang đến hiệu suất 5G tốt hơn cho những chiếc smartphone của chúng ta. Ngoài ra thì các khía cạnh khác của con chip này cũng sẽ nhỉnh hơn so với thế hệ trước tương đối. </p>
+                                <p>Trái với dự đoán Apple sẽ đem đến series này một bộ vi xử lý Silicon M mạnh mẽ, đây có thể là một tin buồn đến các bạn iFan khi máy vẫn sử dụng dòng chip A quen thuộc. Có chăng hãng đang muốn phát triển con chip này một cách toàn diện hơn và có lẽ phải đến thế hệ iPhone 2022 cũng như những thế hệ iPhone sau này chúng ta mới thấy được sự hiện diện của Silicon M trên các mẫu máy.</p>
+                                <p>Đồng thời, Apple cũng nâng cấp dung lượng pin của iPhone 13 Pro Max lên tới 4.352 mAh giúp cho sản phẩm có thể dùng pin lâu hơn.</p>
+                            </section>
+    
+                            <section class="image_tab10">
+                                <img src="iphone 13/pic7.jpg">
+                            </section>
+    
+                        </section>
+                        
+                        <section class="text_main7">
+    
+                            <section class="text_tab7">
+                                <h1>6. Những tính năng nổi bật trên iPhone 13</h1>
+                                <h2>Có thể gọi điện hoặc nhắn tin mà không cần đến nhà mạng</h2>
+                                <p>iPhone 13 có thể hỗ trợ liên lạc vệ tinh quỹ đạo tầm thấp (LEO), điện thoại này có thể giúp chúng ta gọi điện hoặc nhắn tin mà không cần đến nhà mạng. Tuy nhiên, Apple cần phải bổ sung và tích hợp thêm phần cứng để giúp điện thoại liên lạc với vệ tinh.</p>
+                                <p>Ở phần cứng, Apple đã sử dụng phiên bản modem Snapdragon X60 để có thể kết nối vệ tinh LEO giúp cho bạn có thể gọi điện hoặc nhắn tin không cần đến nhà mạng nữa.</p>
+                                <p></p>
+                            </section>
+                            
+                            <section class="image_tab11">
+                                <img src="iphone 13/pic8.png">
+                            </section>
+    
+                            <section class="text_tab7">
+                                <h2>Chế độ quay video chân dung ProRes</h2>
+                                <p>Nhắc đến chụp ảnh, quay video tuyệt đỉnh nhất của các dòng điện thoại thì ai cũng phải nhớ đến iPhone với chất lượng hình ảnh, video sắc nét, tuyệt đẹp. Với dòng sản phẩm mới của iPhone 13 đã tích hợp thêm tính năng quay ProRes và quay video chế độ chân dung. Ngoài ra, chúng ta còn có thể phát triển và sử dụng hiệu ứng bokeh giúp bạn có những tấm ảnh đẹp nhật.</p>
+                            </section>
+    
+                            <section class="text_tab7">
+                                <h2>Tính năng Always On Display</h2>
+                                <p>iPhone 13 còn tích hợp thêm tính năng Always On Display cho phép người dùng hiển thị nhiều tính năng hữu ích như đồng hồ, thông báo,... ngay cả khi điện thoại tắt bạn vẫn có thể nhận được thông báo giúp bạn quản lý thời gian, tiện lợi hơn cho người dùng.</p>
+                            </section>
+                        </section>
+                    </div>
+                    <div id="tab3">
+                        
+                        <section class="order">
+                            <form class="dathang">
+                                <section class="dathang1">
+                                    <section>
+                                        <h4>THÔNG TIN ĐẶT HÀNG </h4>
+                                    </section>
+                        
+                                    <section>
+                                        <input type="email" placeholder="Email" />
+                                    </section>
+    
+                                    <section>
+                                        <input type="text" placeholder="Họ và tên" />
+                                    </section>
+    
+                                    <section>
+                                        <input type="text" placeholder="Số điện thoại" />
+                                    </section>
+    
+                                    <section>
+                                        <input type="text" placeholder="Địa chỉ" />
+                                    </section>
+    
+                                    <section>
+                                        <input type="text" placeholder="Tỉnh thành, quận, huyện, phường xã" />
+                                    </section>
+    
+                                    <section>
+                                        <textarea name="description" cols="50" rows="5" placeholder="Ghi chú (tùy chọn)"></textarea>
+                                    </section>
+                                </section>
+                                
+                                <section class="thanhtoan">
+    
+                                    <section id="submit">
+                                        <input type="radio" name="subject"/> Thanh toán khi giao hàng (COD) <br />
+                                    </section>
+    
+                                    <section id="submit1" onclick="submit1(this)">
+                                        <input type="submit" name="submit" value="ĐẶT HÀNG" />
+                                    </section>
+    
+                                </section> 
+                            </form>
+                        </section>
+                    </div>
+               </div>
+           </section> 
+    
+           
+            <div class="text-center">
+                <img src="dangnhap/image1.jpg"/>
+                <img src="dangnhap/image2.jpg"/>
+                <img src="dangnhap/image3.jpg"/>
+                <img src="dangnhap/image4.jpg"/>
+            </div>
+    
+    
+            <hr id="gachchan">
+            <div class="note" >
+                <div class="note1" >
+                    <p><b>APPLE STORE</b></p>
+                    <a href="sanpham.html"><p>MacBook Pro</p></a>
+                    <a href="sanpham.html"><p>iMac</p></a>
+                    <a href="sanpham.html"><p>iPhone</p></a>
+                    <a href="sanpham.html"><p>iPad, iPad Pro</p></a>
+                    <a href="sanpham.html"><p>Apple Watch</p></a>
+                    <a href="sanpham.html"><p>AirPods</p></a>
+                </div>
+    
+                <div class="note1">
+                    <p><b>ACCESSORIES</b></p>
+                    <a href="sanpham.html"><p>Mac Accessories</p></a>
+                    <a href="sanpham.html"><p>Mice & Keyboards</p></a>
+                    <a href="sanpham.html"><p>Mousepads</p></a>
+                    <a href="sanpham.html"><p>Health & Home Devices</p></a>
+                    <a href="sanpham.html"><p>Webcam & Headset</p></a>
+                    <a href="sanpham.html"><p>Stand for MacBook</p></a>
+                </div>
+    
+                <div class="note1">
+                    <p><b>AUDIO SYSTEM</b></p>
+                    <a href="sanpham.html"><p>JBL</p></a>
+                    <a href="sanpham.html"><p>Bose</p></a>
+                    <a href="sanpham.html"><p>Sony</p></a>
+                    <a href="sanpham.html"><p>Ultimate Ears</p></a>
+                    <a href="sanpham.html" ><p>Harman Kardon</p></a>
+                    <a href="sanpham.html"><p>Marshall</p></a>
+                </div>
+    
+                
+                <div class="note1">
+                    <p><b>HEADPHONE</b></p>
+                    <a href="sanpham.html"><p>Tai nghe JBL</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Bose</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Skull Candy</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Audio Technica</p></a>
+                    <a href="sanpham.html" ><p>Tai nghe Sudio</p></a>
+                    <a href="sanpham.html"><p>Tai nghe Jabra</p></a>
+                </div>
+    
+    
+                <div class="note1">
+                    <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                    <a href="lienhe.html"><p>Chính sách bảo hành</p></a>
+                    <a href="lienhe.html"><p>Chính sách đổi trả</p></a>
+                    <a href="lienhe.html"><p>Chính sách bảo mật thông tin</p></a>
+                    <a href="lienhe.html"><p>Dịch vụ sửa chữa</p></a>
+                    <a href="lienhe.html"><p>Vận chuyển - Thanh toán</p></a>
+                    <a href="lienhe.html"><p>Liên hệ</p></a>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+            <div class="gioithieu">
+                <div class=logogt1>
+                    <div class="logogt">
+                        <img src="logo/logo_gioithieu.png" />
+                    </div>
+                    <div class="textgt">
+                        <p>Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                        <p>Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                    </div>
+                </div>
+                
+                   
+                <div class="hotro" >
+                    <ul class="hotro1">
+                        <li>
+                            <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                            <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                            <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                            <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                        </li>
+                        
+                        <li>
+                            <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                            <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                            <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                        </li>
+                        <li>
+                            <h3> Mạng xã hội</h3>
+                            <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                            <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                            <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                        </li>
+                        <li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </li>
+                    </ul>
+    
+                    <div class="icongt">
+                        <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                        <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                        <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="last">
+                <p>2008 © MACCENTER VIETNAM. ALL RIGHTS RESERVED.</p>
+            </div>
+    </body>
+</html>
