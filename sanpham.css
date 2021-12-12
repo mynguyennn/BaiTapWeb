@@ -111,8 +111,8 @@ nav.tcc{
 }
 
 
-#go a{
-    background-color: black ;
+.go>a{
+    background-color: rgb(0, 0, 0,0.6) ;
     color:white;
     padding: 20px;
     width: 100px;
@@ -122,7 +122,7 @@ nav.tcc{
     justify-content: center;
     z-index: 1;
 }
-#go{
+.go{
     right: 10px;
     bottom: 10px;
     position: fixed;
